@@ -429,7 +429,7 @@ function view($name, $values = array())
                 <div id="menu" onclick="toggleMenu();">Menu
                     <ul id="submenu" class="submenu">
                         <li><a href="<?php echo URL; ?>/?command=ls -ls">List current directory</a></li>
-                        <li><a href="<?php echo URL; ?>/?command=cd /var/www">Goto '/var/www'</a></li>
+                        <li><a href="<?php echo URL; ?>/?command=cd ~/public_html">Goto '~/public_htmlw'</a></li>
                         <li><a href="<?php echo URL; ?>/?user=list">List Users</a></li>
                         <li><a href="<?php echo URL; ?>/?user=clear">Clear terminal</a></li>
                         <li><a href="<?php echo URL; ?>/?logout=true">Logout</a></li>
