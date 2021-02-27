@@ -21,7 +21,7 @@ if (!isset($_SERVER['REQUEST_SCHEME'])) {
     $_SERVER['REQUEST_SCHEME'] = 'http';
 }
 
-define('URL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . '/sync_new/');
+define('URL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . '/');
 
 //startup User 
 $user = new User((new DB)->getUsers());
