@@ -428,14 +428,14 @@ function view($name, $values = array())
             <div class="topbar">
                 <div id="menu" onclick="toggleMenu();">Menu
                     <ul id="submenu" class="submenu">
-                        <li><a href="<?php echo URL; ?>terminal.php?command=ls -ls">List current directory</a></li>
-                        <li><a href="<?php echo URL; ?>terminal.php?command=cd /var/www">Goto '/var/www'</a></li>
-                        <li><a href="<?php echo URL; ?>terminal.php?user=list">List Users</a></li>
-                        <li><a href="<?php echo URL; ?>terminal.php?user=clear">Clear terminal</a></li>
-                        <li><a href="<?php echo URL; ?>terminal.php?logout=true">Logout</a></li>
+                        <li><a href="<?php echo URL; ?>/?command=ls -ls">List current directory</a></li>
+                        <li><a href="<?php echo URL; ?>/?command=cd /var/www">Goto '/var/www'</a></li>
+                        <li><a href="<?php echo URL; ?>/?user=list">List Users</a></li>
+                        <li><a href="<?php echo URL; ?>/?user=clear">Clear terminal</a></li>
+                        <li><a href="<?php echo URL; ?>/?logout=true">Logout</a></li>
                     </ul>
                 </div>
-                <form method="get" action="<?php echo URL; ?>terminal.php">
+                <form method="get" action="<?php echo URL; ?>/">
                     <input type="text" id="command" name="command" placeholder="type a command here..." value="" />
                 </form>
             </div>
@@ -448,7 +448,7 @@ function view($name, $values = array())
             if (!isset($msg)) $msg = '';
 ?>
     <div class="login">
-        <form method="post" action="<?php echo URL; ?>terminal.php">
+        <form method="post" action="<?php echo URL; ?>/">
             <h1>Authentication</h1>
             <span class="msg"><?= $msg ?></span>
             <label>Login:</label>
