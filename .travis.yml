@@ -1,6 +1,6 @@
-language: go
-go:
-  - "1.15"
+language: php
+php:
+  - "7.4"
 
 addons:
   ssh_known_hosts:
