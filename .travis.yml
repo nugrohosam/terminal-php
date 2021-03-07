@@ -20,6 +20,9 @@ before_script:
   - chmod +x deploy/domainesia/script.sh
   - rm -rf .git
 
+script:
+  - pwd
+
 deploy:
   provider: script
   cleanup: false
