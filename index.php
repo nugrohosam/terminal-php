@@ -215,9 +215,9 @@ function createDbUsers()
     $db = new DB;
     $db->createTable();
     echo '<h1>Terminal</h1><p><b>Creating SQLite database and basic users!</b></p>';
-    echo '<br>insert: Admin - token: ' . $ret = $db->newUser('admin', 'bukanadmin', 'Bill Rocha', 'Author & Administrator', 'prbr@ymail.com', 10);
-    echo '<br>insert: User  - token: ' . $ret = $db->newUser('user', 'bukanuser', 'User Default', 'Other User', 'Tel.: +55 21 9 8795 0673', 2);
-    echo '<br>insert: Guest - token: ' . $ret = $db->newUser('guest', 'bukanguest', 'I\'m a Guest User');
+    echo '<br>insert: Admin - token: ' . $ret = $db->newUser('admin', $_GET['passwordadmin'], 'Bill Rocha', 'Author & Administrator', 'prbr@ymail.com', 10);
+    echo '<br>insert: User  - token: ' . $ret = $db->newUser('user', $_GET['passworduser'], 'User Default', 'Other User', 'Tel.: +55 21 9 8795 0673', 2);
+    echo '<br>insert: Guest - token: ' . $ret = $db->newUser('guest', $_GET['passwordguest'], 'I\'m a Guest User');
 
     $x = $db->getUsers();
     p($x, true);
