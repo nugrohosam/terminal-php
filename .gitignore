@@ -1,2 +1,3 @@
 *.db
 error_log
+vendor

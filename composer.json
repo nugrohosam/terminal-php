@@ -1,0 +1,12 @@
+{
+    "name": "nugro/terminal-php",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nugroho samiyono",
+            "email": "nugrohosamiyono@gmail.com"
+        }
+    ],
+    "require": {}
+}
