@@ -2,4 +2,4 @@ Terminal
 ========
 
 - using url?passwordadmin=&passworduser=&passwordguest=
-PHP web terminal emullation
+- PHP web terminal emullation
